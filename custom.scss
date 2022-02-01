@@ -1,0 +1,20 @@
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+
+$headings-font-family: 'Rye', 'Kelly Slab';
+$font-family-base: 'Kelly Slab';
+
+$paper: #CBB382;
+$custom-colors: (
+    'paper': $paper,
+    'paper-dark' : shade-color($paper, 20%),
+    'paper-light' : tint-color($paper, 10%),
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$utilities-colors: map-merge($theme-colors, $utilities-colors);
+$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+
+@import "./node_modules/bootstrap/scss/bootstrap";

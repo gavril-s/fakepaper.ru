@@ -1,0 +1,27 @@
+{
+  "name": "fakepaper.ru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon --ignore *.json index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gavril-s/fakepaper.ru.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gavril-s/fakepaper.ru/issues"
+  },
+  "homepage": "https://github.com/gavril-s/fakepaper.ru#readme",
+  "devDependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
