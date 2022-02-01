@@ -18,10 +18,8 @@
   },
   "homepage": "https://github.com/gavril-s/fakepaper.ru#readme",
   "devDependencies": {
+    "bootstrap": "^5.1.3",
     "express": "^4.17.2",
     "nodemon": "^2.0.15"
-  },
-  "dependencies": {
-    "bootstrap": "^5.1.3"
   }
 }
